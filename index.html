@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Ma'am</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f9d8e5, #dfe9ff, #fff4c2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .card {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border-radius: 28px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      position: relative;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #c04a84;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #34495e;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .message {
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #444;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .highlight {
+      color: #d3548c;
+      font-weight: 700;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      color: #555;
+      font-style: italic;
+    }
+
+    .balloon {
+      position: absolute;
+      font-size: 2rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .b1 {
+      top: 20px;
+      left: 30px;
+    }
+
+    .b2 {
+      top: 30px;
+      right: 40px;
+      animation-delay: 1s;
+    }
+
+    .b3 {
+      bottom: 25px;
+      left: 60px;
+      animation-delay: 2s;
+    }
+
+    .b4 {
+      bottom: 20px;
+      right: 70px;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .message {
+        font-size: 1rem;
+      }
+
+      .card {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎉</div>
+    <div class="balloon b3">✨</div>
+    <div class="balloon b4">🎂</div>
+
+    <img src="mis.png" alt="Teacher Photo" class="photo" />
+
+    <h1>Happy Birthday</h1>
+    <h2>Muntaha Nawaz</h2>
+
+    <p class="message">
+      Today is all about celebrating someone truly special <span class="highlight"></span>.
+      <br><br>
+      May this special day bring you happiness, laughter, and beautiful memories.
+      Wishing you success, good health, and many joyful moments in the year ahead.
+      <br><br>
+      Happy Birthday, <span class="highlight">Muntaha Nawaz</span>.
+    </p>
+
+    <div class="footer">
+      With warm birthday wishes from your Abdullah bin waqar.
+    </div>
+  </div>
+</body>
+
+</html>
